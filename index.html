@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Computer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Mini Computer</h1>
+        <input type="text" id="inputField" placeholder="Enter numbers (e.g., 5 3)">
+        <div class="buttons">
+            <button onclick="performOperation('add')">Add</button>
+            <button onclick="performOperation('subtract')">Subtract</button>
+            <button onclick="performOperation('multiply')">Multiply</button>
+            <button onclick="performOperation('divide')">Divide</button>
+            <button onclick="storeValue()">Store</button>
+            <button onclick="retrieveValue()">Retrieve</button>
+            <button onclick="clearMemory()">Clear Memory</button>
+            <button onclick="listMemory()">List Memory</button>
+        </div>
+        <div id="resultDisplay" class="result"></div>
+        <div id="memoryDisplay" class="memory"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
